@@ -1141,11 +1141,7 @@ footer {
   display: none;
 }
 
-/* ============================================================
-   RESPONSIVE
-   Screens 768px and under = phones / small tablets.
-   Screens 480px and under = small phones, a few extra tweaks.
-   ============================================================ */
+
 
 @media (max-width: 768px) {
 
