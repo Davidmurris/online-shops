@@ -22,7 +22,7 @@ body {
   padding: 10px 40px;
 }
 
-.annoucement a {
+.announcement a {
   color: #ffffff;
   font-weight: 700;
   text-decoration: underline;
@@ -1133,4 +1133,210 @@ footer {
   gap: 2px;
   border-bottom: 3px;
   padding-bottom: 20px;
+}
+
+
+/* Load More Reviews */
+.hidden-review {
+  display: none;
+}
+
+/* ============================================================
+   RESPONSIVE
+   Screens 768px and under = phones / small tablets.
+   Screens 480px and under = small phones, a few extra tweaks.
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  /* ---- Navigation ---- */
+  nav {
+    flex-wrap: wrap;
+    padding: 16px 20px;
+    gap: 14px;
+  }
+  .search-box {
+    order: 3;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .nav-links {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .nav-icon {
+    gap: 20px;
+  }
+
+  /* ---- Hero ---- */
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .hero-image {
+    order: -1;
+    min-height: 280px;
+  }
+  .hero-text {
+    padding: 32px 24px;
+    text-align: center;
+    align-items: center;
+  }
+  .hero-text h1 {
+    font-size: 34px;
+  }
+  .stats {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+
+  /* ---- Brands ---- */
+  .brand {
+    padding: 20px 24px;
+    gap: 16px;
+  }
+  .brand span {
+    font-size: 18px;
+  }
+
+  /* ---- Section spacing + headings ---- */
+  .dress-section,
+  .reviews-section,
+  .tabs-section {
+    padding: 32px 24px;
+  }
+  .row {
+    padding: 12px 24px;
+  }
+  .section-title,
+  .section-top,
+  .reviews-title,
+  .newsletter-title {
+    font-size: 26px;
+  }
+
+  /* ---- Product grid (homepage) ---- */
+  .products,
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  /* ---- Dress style grid ---- */
+  .dress-1 {
+    grid-template-columns: 1fr;
+  }
+  .dress-2 {
+    min-height: 220px;
+  }
+
+  /* ---- Reviews (homepage) ---- */
+  .reviews-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---- Newsletter ---- */
+  .newsletter {
+    flex-direction: column;
+    margin: 0 20px 40px;
+    padding: 32px 24px;
+    text-align: center;
+    align-items: center;
+  }
+  .newsletter-title,
+  .newsletter-form {
+    max-width: 100%;
+  }
+
+  /* ---- Footer ---- */
+  footer {
+    padding: 40px 24px 24px;
+  }
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 20px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  /* ---- Product detail page ---- */
+  .product-sec {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+  }
+  .product-images {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .product-big-img {
+    order: -1;
+  }
+  .product-left {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+  .product1 {
+    min-width: 72px;
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
+  }
+  .product-title {
+    font-size: 24px;
+  }
+
+  /* ---- Reviews tab grid (product page) ---- */
+  .reviews-tab-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---- Tabs: scroll sideways instead of squeezing ---- */
+  .tabs-header {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tab-btn {
+    padding: 14px 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .products,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .quantity {
+    justify-content: center;
+  }
+
+  .newsletter-title {
+    font-size: 22px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
 }
